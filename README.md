@@ -32,4 +32,6 @@ To run this deployment, please do the following:
     - To create a secret, follow [this guide](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
     - If you don't have these three secrets, follow the guide to [create an IAM user with programmatic access](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
 
+![](readme.png)
+
 - Push a change to your repository

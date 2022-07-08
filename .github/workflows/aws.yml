@@ -30,13 +30,6 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
-      - name: Current dir
-        id: pwd
-        run: |
-          ls -al
-          pwd
-          ls ~
-          echo 1. ${{github.run_id}}
       - name: Terraform Format
         id: fmt
         run: terraform fmt -check
@@ -45,7 +38,7 @@ jobs:
         run: terraform init
       - name: Terraform Validate
         id: validate
-        run: terraform validate # -input=false -var="ID=${{github.run_id}}"
+        run: terraform validate
       - name: Terraform Plan
         id: plan
         run: terraform plan -input=false -var "ID=${{github.run_id}}"
