@@ -1,3 +1,4 @@
+[![Production](https://github.com/kcemenike/GithubActions_Terraform_Cloudformation/actions/workflows/aws.yml/badge.svg)](https://github.com/kcemenike/GithubActions_Terraform_Cloudformation/actions/workflows/aws.yml)
 # GithubActions + Terraform + Cloudformation
 
 This section shows how you can use Github actions to automate the deployment of a cloudformation stack in terraform
